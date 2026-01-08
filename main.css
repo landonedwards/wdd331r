@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+h1 {
+    font-size: 3.1em;
+    text-align: center;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #d0d0d0;
+    border-bottom: 2px solid #d0d0d0;
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+    margin: 5px;
+}
+
+li a, li a:visited {
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* instructions did not indicate what the links in the book descriptions/headers 
+should look like when hovered/active, so I made it the same as the nav links. */
+
+li a:hover, p a:hover, h2 a:hover {
+    color: #00ddff;
+}
+
+li a:active, p a:active, h2 a:active {
+    color: #DEB887;
+}
+
+h1, h2, li a {
+    font-family: "Lora", serif;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+}
+
+.post-date {
+    border-bottom: 2px solid #d0d0d0;
+    text-align: right;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+figure {
+    margin: 0 auto;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+article {
+    border-bottom: 2px solid #d0d0d0;
+}
+
+p a {
+    text-decoration: none;
+    color: #666;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* the instructions said to make the body copy #333, but the 
+    mockups had black text for the body.  I ended up making it #333, 
+    but could easily remove it if I misinterpreted it. */
+    color: #333;
+}
+
+@media screen and (min-width: 525px) {
+    article {
+        display: flex;
+        border: none;
+    }
+
+    .post-date {
+        border: none;
+        flex-shrink: 0;
+        flex: 2;
+    }
+
+    .post-content {
+        border-left: 2px solid #d0d0d0;
+        border-bottom: 2px solid #d0d0d0;
+        flex: 6;
+        padding: 15px;
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: end;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .post-content {
+        padding-left: 30px;
+    }
+}
