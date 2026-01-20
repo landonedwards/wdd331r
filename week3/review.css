@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* the instructions said to make the body copy $text-color, but the 
+  mockups had black text for the body.  I ended up making it $text-color, 
+  but could easily remove it if I misinterpreted it. */
+  color: #333;
+}
+
+h1, h2, li a {
+  font-family: "Lora", serif;
+}
+
+h1 {
+  font-size: 3.1em;
+  text-align: center;
+}
+h1 a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+}
+li a,
+li a:visited {
+  text-decoration: none;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h2 a, li a, p a {
+  text-decoration: none;
+  color: #666;
+}
+h2 a:hover, li a:hover, p a:hover {
+  color: #00ddff;
+}
+h2 a:active, li a:active, p a:active {
+  color: #DEB887;
+}
+
+h2 a {
+  font-weight: 500;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #d0d0d0;
+  border-bottom: 2px solid #d0d0d0;
+  padding: 5px;
+}
+@media (min-width: 525px) {
+  ul {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: end;
+  }
+}
+
+/* instructions did not indicate what the links in the book descriptions/headers 
+should look like when hovered/active, so I made it the same as the nav links. */
+.post-date {
+  border-bottom: 2px solid #d0d0d0;
+  text-align: right;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+figure {
+  margin: 0 auto;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+article {
+  border-bottom: 2px solid #d0d0d0;
+}
+@media (min-width: 525px) {
+  article {
+    display: flex;
+    border: none;
+  }
+  article .post-date {
+    border: none;
+    flex-shrink: 0;
+    flex: 2;
+  }
+  article .post-content {
+    border-left: 2px solid #d0d0d0;
+    border-bottom: 2px solid #d0d0d0;
+    flex: 6;
+    padding: 15px;
+  }
+}
+@media (min-width: 1100px) {
+  article .post-content {
+    padding-left: 30px;
+  }
+}
+
+/*# sourceMappingURL=review.css.map */
