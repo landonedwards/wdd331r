@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="component.css" rel="stylesheet">
+</head>
+<body>
+    <aside class="cart">
+        <header class="cart__header">
+            <h1 class="cart__title">Your cart</h1>
+            <span class="cart__quantity">3</span>
+        </header>
+
+        <ul class="cart__items">
+            <li class="cart__item">
+                <div class="item__header">
+                    <h3 class="item__name">Product name</h3>
+                    <p class="item__price">$12</p>
+                </div>
+                <p class="item__description">Brief description</p>
+            </li>
+            <li class="cart__item">
+                <div class="item__header">
+                    <h3 class="item__name">Second product</h3>
+                    <p class="item__price">$8</p>
+                </div>
+                <p class="item__description">Brief description</p>
+            </li>
+            <li class="cart__item">
+                <div class="item__header">
+                    <h3 class="item__name">Third item</h3>
+                    <p class="item__price">$5</p>
+                </div>
+                <p class="item__description">Brief description</p>
+            </li>
+            <li class="cart__discount">
+                <div class="discount__header">
+                    <h3 class="discount__name">Promo code</h3>
+                    <p class="item__price">-$5</p>
+                </div>
+                <p class="item__description">EXAMPLECODE</p>
+            </li>
+            <li class="cart__total">
+                <h3 class="total__name">Total (USD)</h3>
+                <p class="total__price">$20</p>
+            </li>
+        </ul>
+
+        <form class="promo">
+            <input type="text" placeholder="Promo code" class="promo__input">
+            <button class="promo__button" type="submit">Redeem</button>
+        </form>
+    </aside>
+</body>
+</html>

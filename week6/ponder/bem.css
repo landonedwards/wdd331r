@@ -1,0 +1,24 @@
+.summary {
+    width: 360px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+
+    .summary__img {
+        width: 100%;
+        height: 240px;
+        background-color: lightgray;
+    }
+
+    .summary__tags {
+        color: blue;
+    }
+
+    .summary__date {
+        margin-top: -15px;
+    }
+    
+    .summary__link {
+        text-decoration: none;
+    }
+}

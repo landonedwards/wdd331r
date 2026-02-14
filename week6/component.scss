@@ -1,0 +1,117 @@
+$font-family: Arial, Helvetica, sans-serif;
+$special-gray: #6c757d;
+$promo-color: #2ea949;
+$border-specs: 1px solid $special-gray;
+
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.cart {
+    max-width: 380px;
+    font-family: $font-family;
+    margin: 0 auto;
+
+    .cart__header {
+        @include flex-space-between();
+        color: $special-gray;
+
+        .cart__quantity {
+            background-color: $special-gray;
+            color: white;
+            width: 37px;
+            border-radius: 15px;
+            font-size: 1.6em;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .cart__items {
+        margin-top: 0px;
+        background-color: white;
+        border: $border-specs;
+        border-radius: 7px;
+        padding: 0;
+
+        .cart__item, .cart__discount {
+            list-style: none;
+            border-bottom: $border-specs;
+            padding: 5px 25px;
+
+            .item__header, .discount__header {
+                @include flex-space-between();
+            }
+
+            .item__description {
+                margin-top: -12px;
+                color: $special-gray;
+            }
+        }
+
+        .cart__discount {
+            color: $promo-color;
+            background-color: whitesmoke;
+
+            .item__description, .item__price {
+                color: $promo-color;
+            }
+        }
+
+        /* these are outside of their respective item containers so I can style
+         them at the same time */
+        .item__price, .total__price {
+            color: $special-gray;
+            /* same size as h3 font size */
+            font-size: 1.17em;
+        }
+
+        .cart__total {
+            @include flex-space-between();
+            padding: 5px 25px;
+            list-style: none;
+
+            .total__price {
+                color: black;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .promo {
+        background-color: white;
+        height: 40px;
+        border: $border-specs;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+
+        .promo__input {
+            flex-grow: 2;
+            border: $border-specs;
+            border-radius: 5px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            font-size: 1.2em;
+            color: $special-gray;
+            padding: 10px;
+        }
+
+        .promo__button {
+            flex-grow: 1;
+            background-color: $special-gray;
+            border-radius: 5px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            font-size: 1.2em;
+            color: white;
+            padding: 0px 15px;
+        }
+    }
+}

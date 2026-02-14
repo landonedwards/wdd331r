@@ -1,0 +1,102 @@
+body {
+  background-color: whitesmoke;
+}
+
+.cart {
+  max-width: 380px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+.cart .cart__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6c757d;
+}
+.cart .cart__header .cart__quantity {
+  background-color: #6c757d;
+  color: white;
+  width: 37px;
+  border-radius: 15px;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+}
+.cart .cart__items {
+  margin-top: 0px;
+  background-color: white;
+  border: 1px solid #6c757d;
+  border-radius: 7px;
+  padding: 0;
+}
+.cart .cart__items .cart__item, .cart .cart__items .cart__discount {
+  list-style: none;
+  border-bottom: 1px solid #6c757d;
+  padding: 5px 25px;
+}
+.cart .cart__items .cart__item .item__header, .cart .cart__items .cart__item .discount__header, .cart .cart__items .cart__discount .item__header, .cart .cart__items .cart__discount .discount__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .cart__items .cart__item .item__description, .cart .cart__items .cart__discount .item__description {
+  margin-top: -12px;
+  color: #6c757d;
+}
+.cart .cart__items .cart__discount {
+  color: #2ea949;
+  background-color: whitesmoke;
+}
+.cart .cart__items .cart__discount .item__description, .cart .cart__items .cart__discount .item__price {
+  color: #2ea949;
+}
+.cart .cart__items {
+  /* these are outside of their respective item containers so I can style
+   them at the same time */
+}
+.cart .cart__items .item__price, .cart .cart__items .total__price {
+  color: #6c757d;
+  /* same size as h3 font size */
+  font-size: 1.17em;
+}
+.cart .cart__items .cart__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  list-style: none;
+}
+.cart .cart__items .cart__total .total__price {
+  color: black;
+  font-weight: 600;
+}
+.cart .promo {
+  background-color: white;
+  height: 40px;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+}
+.cart .promo .promo__input {
+  flex-grow: 2;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 1.2em;
+  color: #6c757d;
+  padding: 10px;
+}
+.cart .promo .promo__button {
+  flex-grow: 1;
+  background-color: #6c757d;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 1.2em;
+  color: white;
+  padding: 0px 15px;
+}
+
+/*# sourceMappingURL=component.css.map */
