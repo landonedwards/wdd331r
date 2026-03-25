@@ -25,6 +25,9 @@ body {
     max-width: 66ch;
 }
 
+/* Wasn't able to completely recreate the fonts used in the textbook because I was exclusively using the Recursive font, 
+   as the reading directed. In particular, the p fonts were serif and difficult to replicate. */
+
 h1, h2 {
     --wght: 800;
     --casl: "CASL" 0; 
