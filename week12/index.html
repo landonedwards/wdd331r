@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="textbook-page">
+        <p>
+        For example, say your developers have come up with the perfect amortization program and you want to
+        install it on the workgroup server for other systems to remotely mount and use. Because this is a 
+        third-party or custom application, the logical place for it is in <code>/usr/local/appname</code>, possibly with
+        a link to the program binary in the <code>/usr/local/bin</code> directory (because that's in the path).
+        </p>
+
+        <section class="alert">
+            <div class="alert__icon">
+                <span class="icon__exam-text">Exam</span>
+                <span class="icon__alert-text">Alert</span>
+            </div>
+            <div class="alert__description">
+                If given a choice between putting the software package <code><strong>BIGPROG</strong></code> in the <code><strong>/usr/local/BIGPROG</strong></code>
+                section and the <code><strong>/opt/BIGPROG</strong></code> section, it's hard to choose. Read any relevant exam question
+                closely--the main difference being that the <code><strong>/opt</strong></code> section is not considered to be sharable,
+                whereas the <code><strong>/usr</strong></code> section is often shared and mounted by client systems.
+            </div>
+        </section>
+
+        <h1>File Management Commands</h1>
+        <p>
+            A major section of the 101 exam is dedicated to how to run commands properly with the right 
+            options and arguments. As a good sysadmin, you'll be expected to know how to create, delete, 
+            edit, set permissions on, display, move, copy, and determine the type of files and programs.
+        </p>
+
+        <section class="alert">
+            <div class="alert__icon">
+                <span class="icon__exam-text">Exam</span>
+                <span class="icon__alert-text">Alert</span>
+            </div>
+            <div class="alert__description">
+                You must be able to pick proper and working commands out of lists of possibilities, type 
+                in appropriate strings in fill-in-the-blank boxes, and in general show that you've run the 
+                programs and utilities in question.
+            </div>
+        </section>
+
+        <h2>Tips for working with Linux files</h2>
+        <p>
+            Because most users and sysadmins come from a Windows or other OS background, a quick set of 
+            recommendations for the less-experienced can be of help here:
+        </p>
+
+        <ul class="tips-list">
+            <li>
+                <span class="bullet">></span> <strong>Hidden files aren't really hidden -</strong> They just begin with a ., such as the <code>.bashrc</code> and 
+                <code>.bash_profile</code> files. These are not viewable by normal users with conventional commands and
+                switches and aren't deleted by commands such as <code>rm -f *.*</code>.
+            </li>
+            <li>
+                <span class="bullet">></span> <strong>Filenames can contain multiple periods or no period characters -</strong> The filenames <code>this.is.a.long.file</code>
+                and <code>thisisalongfile</code> are perfectly reasonable and possible.
+            </li>
+            <li>
+                <span class="bullet">></span> <strong>Spaces in filenames look nice, but are a pain to type -</strong> Use an <code>_</code> or a <code>-</code> instead of spaces because it's
+                neater and easier than prefixing all spaces with a <code>\</code>. (To display a space in a filename, the system shows
+                a space prefixes with a backslash.)
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
